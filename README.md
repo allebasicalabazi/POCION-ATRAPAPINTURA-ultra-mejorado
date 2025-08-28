@@ -1,2 +1,1 @@
-# POCION-ATRAPAPINTURA-ultra-mejorado
-version mejorada con sonido
+# Trex_Etapa_0
