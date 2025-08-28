@@ -172,9 +172,9 @@ function mostrar_menu(){
     fill("black");
     text("POCIÓN ATRAPAPINTURA", width / 2, height / 3);
     textSize(20);
-    text("Presiona ENTER para comenzar", width / 2, height / 2);
+    text("Presiona tu pantalla para comenzar", width / 2, height / 2);
 
-  if (touches.legth > 0 || keyDown("ENTER")) {
+  if (touches.legth > 0 || mouseIsPressed) {
    reiniciarJuego()
     estado = "juego";
   }
@@ -188,7 +188,7 @@ function gameOver(){
     textSize(20);
     text("puntos finales: "+score, width / 2, height / 2);
     text("Presiona ENTER para comenzar", width / 2, height / 1.5);
-  if (touches.length > 0 || keyDown("ENTER")) {
+  if (touches.length > 0 || mouseIsPressed) {
     reiniciarJuego();
     estado = "juego";
     touches= []
